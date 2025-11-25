@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Norwegian Word Game</title>
+<style>
+    body { font-family: Arial, sans-serif; text-align: center; background-color: #f0f8ff; }
+    h1 { margin-top: 20px; }
+    #word-box { font-size: 2em; margin: 20px; }
+    #streak, #personal-high { margin: 10px; font-size: 1.2em; }
+    #lives { margin: 10px; font-size: 1.2em; }
+    input[type=text] { font-size: 1em; padding: 5px; width: 200px; }
+    button { font-size: 1em; padding: 5px 10px; margin-left: 10px; }
+    #feedback { margin: 15px; font-weight: bold; }
+    #leaderboard { margin-top: 30px; }
+</style>
+</head>
+<body>
+<h1>Translate the following words</h1>
+<div id="word-box"></div>
+<input type="text" id="answer" placeholder="Type your answer">
+<button onclick="submitAnswer()">Submit</button>
+<div id="feedback"></div>
+<div id="lives">Lives: ❤️❤️❤️</div>
+<div id="streak">Streak: 0</div>
+<div id="personal-high">Personal High: 0</div>
+
+<h2>Global Leaderboard</h2>
+<div id="leaderboard"></div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
